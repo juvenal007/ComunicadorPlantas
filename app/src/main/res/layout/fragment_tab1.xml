@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1"
+    android:background="#C8E6C9">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/foto1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/lirio"
+            android:scaleType="centerCrop"
+            android:background="#000000"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foto1"
+            android:text="Lirios"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/nombreComun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre comun: "
+            android:layout_below="@id/titulo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/comun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/nombreCientifico"
+            android:text="Lirio cárdeno"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/nombreCientifico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre cientifico: "
+            android:layout_below="@id/nombreComun"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/cientifico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comun"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/nombreCientifico"
+            android:text="Iris germánica"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/nombreAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura: "
+            android:layout_below="@id/nombreCientifico"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/altura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cientifico"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/nombreCientifico"
+            android:text="60 a 90 cm."
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/nombreDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion"
+            android:layout_below="@id/altura"
+            android:layout_marginTop="20px"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombreDescripcion"
+            android:text="Los lirios son plantas perenes que poseen tallos de casi 1 metro de alto. Éstos son lo bastante fuertes y en ellos se pueden encontrar las hojas y flores del lirio."
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
